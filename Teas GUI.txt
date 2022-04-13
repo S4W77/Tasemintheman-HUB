@@ -1,0 +1,555 @@
+print("Taesmitheman HUB isLoaded")
+
+local ServerHUB = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local maxhealth = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local health = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local jp = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ws = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local closeMain = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Open = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local hframe = Instance.new("Frame")
+local seth = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local reh = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local hinput = Instance.new("TextBox")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UICorner_12 = Instance.new("UICorner")
+local closeh = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local wsframe = Instance.new("Frame")
+local setws = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local rews = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local wsinput = Instance.new("TextBox")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local UICorner_17 = Instance.new("UICorner")
+local closews = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local mhframe = Instance.new("Frame")
+local setmh = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local remh = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local mhinput = Instance.new("TextBox")
+local UICorner_21 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local UICorner_22 = Instance.new("UICorner")
+local closemh = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local jpframe = Instance.new("Frame")
+local setjp = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local rejp = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local jpinput = Instance.new("TextBox")
+local UICorner_26 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local UICorner_27 = Instance.new("UICorner")
+local closejp = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+
+--Properties:
+
+ServerHUB.Name = "ServerHUB"
+ServerHUB.Parent = game.Workspace
+ServerHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ServerHUB
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+Main.Position = UDim2.new(0.1771117, 0, 0.21761705, 0)
+Main.Size = UDim2.new(0, 274, 0, 206)
+Main.Visible = false
+Main.Draggable = true
+
+maxhealth.Name = "maxhealth"
+maxhealth.Parent = Main
+maxhealth.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+maxhealth.Position = UDim2.new(0.56934309, 0, 0.7527982, 0)
+maxhealth.Size = UDim2.new(0, 104, 0, 38)
+maxhealth.Font = Enum.Font.SourceSansBold
+maxhealth.Text = "Max Health"
+maxhealth.TextColor3 = Color3.fromRGB(0, 0, 0)
+maxhealth.TextSize = 19.000
+maxhealth.MouseButton1Click:Connect(function()
+	mhframe.Visible = true
+end)
+
+UICorner.Parent = maxhealth
+
+health.Name = "health"
+health.Parent = Main
+health.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+health.Position = UDim2.new(0.0510948896, 0, 0.7527982, 0)
+health.Size = UDim2.new(0, 104, 0, 38)
+health.Font = Enum.Font.SourceSansBold
+health.Text = "Health"
+health.TextColor3 = Color3.fromRGB(0, 0, 0)
+health.TextSize = 19.000
+health.MouseButton1Click:Connect(function()
+	hframe.Visible = true
+end)
+
+UICorner_2.Parent = health
+
+jp.Name = "jp"
+jp.Parent = Main
+jp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jp.Position = UDim2.new(0.56934309, 0, 0.524689734, 0)
+jp.Size = UDim2.new(0, 104, 0, 38)
+jp.Font = Enum.Font.SourceSansBold
+jp.Text = "Jump Power"
+jp.TextColor3 = Color3.fromRGB(0, 0, 0)
+jp.TextSize = 19.000
+jp.MouseButton1Click:Connect(function()
+	jpframe.Visible = true
+end)
+
+UICorner_3.Parent = jp
+
+ws.Name = "ws"
+ws.Parent = Main
+ws.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ws.Position = UDim2.new(0.0510948896, 0, 0.524689734, 0)
+ws.Size = UDim2.new(0, 104, 0, 38)
+ws.Font = Enum.Font.SourceSansBold
+ws.Text = "Walk Speed"
+ws.TextColor3 = Color3.fromRGB(0, 0, 0)
+ws.TextSize = 19.000
+ws.MouseButton1Click:Connect(function()
+	wsframe.Visible = true
+end)
+
+UICorner_4.Parent = ws
+
+ImageLabel.Parent = Main
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.366158783, 0, 0.0225876011, 0)
+ImageLabel.Size = UDim2.new(0, 73, 0, 64)
+ImageLabel.Image = "rbxassetid://9351019097"
+
+UICorner_5.Parent = ImageLabel
+
+TextLabel.Parent = Main
+TextLabel.Active = true
+TextLabel.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.216434211, 0, 0.366478473, 0)
+TextLabel.Size = UDim2.new(0, 155, 0, 22)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Server@Taesmitheman"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 17.000
+
+UICorner_6.Parent = Main
+
+closeMain.Name = "closeMain"
+closeMain.Parent = Main
+closeMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closeMain.Position = UDim2.new(0.882518828, 0, 0.0221660808, 0)
+closeMain.Size = UDim2.new(0, 25, 0, 18)
+closeMain.Font = Enum.Font.SourceSansBold
+closeMain.Text = "X"
+closeMain.TextColor3 = Color3.fromRGB(0, 0, 0)
+closeMain.TextSize = 14.000
+closeMain.MouseButton1Click:Connect(function()
+	Main.Visible = false
+	Open.Visible = true
+end)
+
+UICorner_7.Parent = closeMain
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0291970801, 0, 0.0631067976, 0)
+TextLabel_2.Size = UDim2.new(0, 84, 0, 37)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Credit to him -->"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+Open.Name = "Open"
+Open.Parent = ServerHUB
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.Position = UDim2.new(0.0101344278, 0, 0.65934068, 0)
+Open.Size = UDim2.new(0, 53, 0, 45)
+Open.Font = Enum.Font.SourceSansBold
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 19.000
+Open.MouseButton1Click:Connect(function()
+	Main.Visible = true
+	Open.Visible = false
+end)
+
+UICorner_8.Parent = Open
+
+hframe.Name = "hframe"
+hframe.Parent = ServerHUB
+hframe.Active = true
+hframe.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+hframe.Position = UDim2.new(0.43599999, 0, 0.349000007, 0)
+hframe.Size = UDim2.new(0, 229, 0, 197)
+hframe.Visible = false
+hframe.Draggable = true
+
+seth.Name = "seth"
+seth.Parent = hframe
+seth.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+seth.Position = UDim2.new(0.0206741262, 0, 0.752908707, 0)
+seth.Size = UDim2.new(0, 101, 0, 38)
+seth.Font = Enum.Font.SourceSansBold
+seth.Text = "Set Health"
+seth.TextColor3 = Color3.fromRGB(0, 0, 0)
+seth.TextSize = 17.000
+seth.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanaoid.Health = hinput.Text
+end)
+
+UICorner_9.Parent = seth
+
+reh.Name = "reh"
+reh.Parent = hframe
+reh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+reh.Position = UDim2.new(0.532392859, 0, 0.752908707, 0)
+reh.Size = UDim2.new(0, 101, 0, 38)
+reh.Font = Enum.Font.SourceSansBold
+reh.Text = "Full Health"
+reh.TextColor3 = Color3.fromRGB(0, 0, 0)
+reh.TextSize = 17.000
+reh.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanaoid.Health = 100
+end)
+
+UICorner_10.Parent = reh
+
+hinput.Name = "hinput"
+hinput.Parent = hframe
+hinput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hinput.Position = UDim2.new(0.255049139, 0, 0.515030861, 0)
+hinput.Size = UDim2.new(0, 112, 0, 41)
+hinput.Font = Enum.Font.SourceSansBold
+hinput.PlaceholderText = "Health Value"
+hinput.Text = ""
+hinput.TextColor3 = Color3.fromRGB(0, 0, 0)
+hinput.TextSize = 19.000
+
+UICorner_11.Parent = hframe
+
+TextLabel_3.Parent = hframe
+TextLabel_3.Active = true
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+TextLabel_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.Position = UDim2.new(0.158040047, 0, 0.378103167, 0)
+TextLabel_3.Size = UDim2.new(0, 155, 0, 22)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Server@Taesmitheman"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 17.000
+
+ImageLabel_2.Parent = hframe
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.Position = UDim2.new(0.340611339, 0, 0.0283018872, 0)
+ImageLabel_2.Size = UDim2.new(0, 73, 0, 64)
+ImageLabel_2.Image = "rbxassetid://9351019097"
+
+UICorner_12.Parent = ImageLabel_2
+
+closeh.Name = "closeh"
+closeh.Parent = hframe
+closeh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closeh.Position = UDim2.new(0.864270627, 0, 0.0270204488, 0)
+closeh.Size = UDim2.new(0, 25, 0, 18)
+closeh.Font = Enum.Font.SourceSansBold
+closeh.Text = "X"
+closeh.TextColor3 = Color3.fromRGB(0, 0, 0)
+closeh.TextSize = 14.000
+closeh.MouseButton1Click:Connect(function()
+	hframe.Visible = false
+end)
+
+UICorner_13.Parent = closeh
+
+wsframe.Name = "wsframe"
+wsframe.Parent = ServerHUB
+wsframe.Active = true
+wsframe.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+wsframe.Position = UDim2.new(0.43599999, 0, 0.349000007, 0)
+wsframe.Size = UDim2.new(0, 229, 0, 197)
+wsframe.Visible = false
+wsframe.Draggable = true
+
+setws.Name = "setws"
+setws.Parent = wsframe
+setws.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+setws.Position = UDim2.new(0.0206741262, 0, 0.752908707, 0)
+setws.Size = UDim2.new(0, 101, 0, 38)
+setws.Font = Enum.Font.SourceSansBold
+setws.Text = "Set Walk Speed"
+setws.TextColor3 = Color3.fromRGB(0, 0, 0)
+setws.TextSize = 17.000
+setws.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanaoid.WalkSpeed = wsinput.Text
+end)
+
+UICorner_14.Parent = setws
+
+rews.Name = "rews"
+rews.Parent = wsframe
+rews.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rews.Position = UDim2.new(0.532392859, 0, 0.752908707, 0)
+rews.Size = UDim2.new(0, 101, 0, 38)
+rews.Font = Enum.Font.SourceSansBold
+rews.Text = "Reset Walk Speed"
+rews.TextColor3 = Color3.fromRGB(0, 0, 0)
+rews.TextSize = 14.000
+rews.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanaoid.WalkSpeed = 16
+end)
+
+UICorner_15.Parent = rews
+
+wsinput.Name = "wsinput"
+wsinput.Parent = wsframe
+wsinput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+wsinput.Position = UDim2.new(0.255049139, 0, 0.515030861, 0)
+wsinput.Size = UDim2.new(0, 112, 0, 41)
+wsinput.Font = Enum.Font.SourceSansBold
+wsinput.PlaceholderText = "Speed Value"
+wsinput.Text = ""
+wsinput.TextColor3 = Color3.fromRGB(0, 0, 0)
+wsinput.TextSize = 19.000
+
+UICorner_16.Parent = wsframe
+
+TextLabel_4.Parent = wsframe
+TextLabel_4.Active = true
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+TextLabel_4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.Position = UDim2.new(0.158040047, 0, 0.378103167, 0)
+TextLabel_4.Size = UDim2.new(0, 155, 0, 22)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Server@Taesmitheman"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 17.000
+
+ImageLabel_3.Parent = wsframe
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.Position = UDim2.new(0.340611339, 0, 0.0283018872, 0)
+ImageLabel_3.Size = UDim2.new(0, 73, 0, 64)
+ImageLabel_3.Image = "rbxassetid://9351019097"
+
+UICorner_17.Parent = ImageLabel_3
+
+closews.Name = "closews"
+closews.Parent = wsframe
+closews.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closews.Position = UDim2.new(0.864270627, 0, 0.0270204488, 0)
+closews.Size = UDim2.new(0, 25, 0, 18)
+closews.Font = Enum.Font.SourceSansBold
+closews.Text = "X"
+closews.TextColor3 = Color3.fromRGB(0, 0, 0)
+closews.TextSize = 14.000
+closews.MouseButton1Click:Connect(function()
+	wsframe.Visible = false
+end)
+
+UICorner_18.Parent = closews
+
+mhframe.Name = "mhframe"
+mhframe.Parent = ServerHUB
+mhframe.Active = true
+mhframe.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+mhframe.Position = UDim2.new(0.43599999, 0, 0.349000007, 0)
+mhframe.Size = UDim2.new(0, 229, 0, 197)
+mhframe.Visible = false
+mhframe.Draggable = true
+
+setmh.Name = "setmh"
+setmh.Parent = mhframe
+setmh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+setmh.Position = UDim2.new(0.0206741262, 0, 0.752908707, 0)
+setmh.Size = UDim2.new(0, 101, 0, 38)
+setmh.Font = Enum.Font.SourceSansBold
+setmh.Text = "Set Max Health"
+setmh.TextColor3 = Color3.fromRGB(0, 0, 0)
+setmh.TextSize = 17.000
+setmh.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanaoid.MaxHealth = mhinput.Text 
+end)
+
+UICorner_19.Parent = setmh
+
+remh.Name = "remh"
+remh.Parent = mhframe
+remh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+remh.Position = UDim2.new(0.532392859, 0, 0.752908707, 0)
+remh.Size = UDim2.new(0, 101, 0, 38)
+remh.Font = Enum.Font.SourceSansBold
+remh.Text = "Reset Max Health"
+remh.TextColor3 = Color3.fromRGB(0, 0, 0)
+remh.TextSize = 14.000
+remh.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanaoid.MaxHealth = 100
+end)
+
+UICorner_20.Parent = remh
+
+mhinput.Name = "mhinput"
+mhinput.Parent = mhframe
+mhinput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mhinput.Position = UDim2.new(0.255049139, 0, 0.515030861, 0)
+mhinput.Size = UDim2.new(0, 112, 0, 41)
+mhinput.Font = Enum.Font.SourceSansBold
+mhinput.PlaceholderText = "Max Health Value"
+mhinput.Text = ""
+mhinput.TextColor3 = Color3.fromRGB(0, 0, 0)
+mhinput.TextSize = 16.000
+
+UICorner_21.Parent = mhframe
+
+TextLabel_5.Parent = mhframe
+TextLabel_5.Active = true
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+TextLabel_5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.Position = UDim2.new(0.158040047, 0, 0.378103167, 0)
+TextLabel_5.Size = UDim2.new(0, 155, 0, 22)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Server@Taesmitheman"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 17.000
+
+ImageLabel_4.Parent = mhframe
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.Position = UDim2.new(0.340611339, 0, 0.0283018872, 0)
+ImageLabel_4.Size = UDim2.new(0, 73, 0, 64)
+ImageLabel_4.Image = "rbxassetid://9351019097"
+
+UICorner_22.Parent = ImageLabel_4
+
+closemh.Name = "closemh"
+closemh.Parent = mhframe
+closemh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closemh.Position = UDim2.new(0.864270627, 0, 0.0270204488, 0)
+closemh.Size = UDim2.new(0, 25, 0, 18)
+closemh.Font = Enum.Font.SourceSansBold
+closemh.Text = "X"
+closemh.TextColor3 = Color3.fromRGB(0, 0, 0)
+closemh.TextSize = 14.000
+closemh.MouseButton1Click:Connect(function()
+	mhframe.Visible = false
+end)
+
+UICorner_23.Parent = closemh
+
+jpframe.Name = "jpframe"
+jpframe.Parent = ServerHUB
+jpframe.Active = true
+jpframe.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+jpframe.Position = UDim2.new(0.435815513, 0, 0.348732293, 0)
+jpframe.Size = UDim2.new(0, 229, 0, 197)
+jpframe.Visible = false
+jpframe.Draggable = true
+
+setjp.Name = "setjp"
+setjp.Parent = jpframe
+setjp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+setjp.Position = UDim2.new(0.0206741262, 0, 0.752908707, 0)
+setjp.Size = UDim2.new(0, 101, 0, 38)
+setjp.Font = Enum.Font.SourceSansBold
+setjp.Text = "Set Jump Power"
+setjp.TextColor3 = Color3.fromRGB(0, 0, 0)
+setjp.TextSize = 17.000
+setjp.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanaoid.JumpPower = jpinput.Text
+end)
+
+UICorner_24.Parent = setjp
+
+rejp.Name = "rejp"
+rejp.Parent = jpframe
+rejp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rejp.Position = UDim2.new(0.532392859, 0, 0.752908707, 0)
+rejp.Size = UDim2.new(0, 101, 0, 38)
+rejp.Font = Enum.Font.SourceSansBold
+rejp.Text = "Reset Jump Power"
+rejp.TextColor3 = Color3.fromRGB(0, 0, 0)
+rejp.TextSize = 14.000
+rejp.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanaoid.JumpPower = 50
+end)
+
+UICorner_25.Parent = rejp
+
+jpinput.Name = "jpinput"
+jpinput.Parent = jpframe
+jpinput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jpinput.Position = UDim2.new(0.255049139, 0, 0.515030861, 0)
+jpinput.Size = UDim2.new(0, 112, 0, 41)
+jpinput.Font = Enum.Font.SourceSansBold
+jpinput.PlaceholderText = "Jump Power Value"
+jpinput.Text = ""
+jpinput.TextColor3 = Color3.fromRGB(0, 0, 0)
+jpinput.TextSize = 15.000
+
+UICorner_26.Parent = jpframe
+
+TextLabel_6.Parent = jpframe
+TextLabel_6.Active = true
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+TextLabel_6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.Position = UDim2.new(0.158040047, 0, 0.378103167, 0)
+TextLabel_6.Size = UDim2.new(0, 155, 0, 22)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "Server@Taesmitheman"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 17.000
+
+ImageLabel_5.Parent = jpframe
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.Position = UDim2.new(0.340611339, 0, 0.0283018872, 0)
+ImageLabel_5.Size = UDim2.new(0, 73, 0, 64)
+ImageLabel_5.Image = "rbxassetid://9351019097"
+
+UICorner_27.Parent = ImageLabel_5
+
+closejp.Name = "closejp"
+closejp.Parent = jpframe
+closejp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closejp.Position = UDim2.new(0.864270627, 0, 0.0270204488, 0)
+closejp.Size = UDim2.new(0, 25, 0, 18)
+closejp.Font = Enum.Font.SourceSansBold
+closejp.Text = "X"
+closejp.TextColor3 = Color3.fromRGB(0, 0, 0)
+closejp.TextSize = 14.000
+closejp.MouseButton1Click:Connect(function()
+	jpframe.Visible = false
+end)
+
+UICorner_28.Parent = closejp
+
+jp.Dr
+
+--credit to Server@Taesmitheman
